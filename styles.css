@@ -208,3 +208,32 @@ textarea {
     box-shadow: 0 0 5px #131313;
     transform:perspective(1000px) translateZ(0);
 }
+
+#name, #email, #ph {
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    font-size: 18px;
+    color: #333;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#name:focus, #email:focus, #ph:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 2px 8px rgba(74, 144, 226, 0.3);
+}
+
+#ph {
+    min-height: 120px;
+    resize: vertical;
+}
+
+::placeholder {
+    color: #999;
+    opacity: 1;
+}
